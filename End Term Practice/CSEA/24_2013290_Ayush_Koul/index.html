@@ -1,5 +1,40 @@
 <html>
+	<head>
+	<link rel='stylesheet' href='style.css'>
+	</head>
 	<body>
-		Hello world
+	
+		<table>
+			<tr>
+			<td>Name: </td>
+			<td id = "name"></td>
+			</tr>
+			
+			<tr>
+			<td>Age: </td>
+			<td id = "age"></td>
+			</tr>
+		</table>
+	
+	
+	<script>
+	var name = prompt("Enter name:")
+	var age = prompt("Enter age:")
+	
+	var x = document.getElementById("name");
+	x.innerHTML = name;
+	document.getElementById("age").innerHTML = age;
+	
+	x.addEventListener("mouseover", function(){
+		console.log("Hello");
+		x.innerHTML = "Hello";
+	});
+	
+	x.addEventListener("mouseout", function(){
+		console.log("hi");
+		x.innerHTML = "a";
+	});
+	
+	</script>
 	</body>
 </html>
