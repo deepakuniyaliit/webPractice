@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	</head>
+	<body>
+	    <p id='em'></p>
+		<script>
+		    var email=prompt("enter your email","");
+			if(email=="")
+			{
+			    document.getElementById('em').innerHTML="prompt empty";
+			}
+			else
+			{
+			    var x,avg,splitted,part1,part2;
+				splitted=email.split("@");
+				if(splitted[1]=="" || splitted==email)
+				{
+				    document.getElementById('em').innerHTML="not valid email";
+				}
+				else
+				{
+				    part1=splitted[0];
+				    avg=part1.length/2;
+				    part1=part1.substring(0,(part1.length-avg));
+				    part2="...@";
+				    x=part1+part2+splitted[1];
+				    document.getElementById('em').innerHTML=x;
+				}
+			}
+		</script>
+	</body>
+</html>

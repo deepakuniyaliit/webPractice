@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquerymin.js"></script>
+        <script>
+            $(document).ready(function(){  //this will not load your script until whole document is loaded
+                $("button").click(function(){  //on single click of an event
+                    $("p").hide();  //effects
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2>THIS IS A HEADING</h2>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <button>Hide p</button>
+    </body>
+</html>

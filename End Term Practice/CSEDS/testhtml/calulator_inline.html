@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <style>
+	     table,td
+		 {
+		    border: 2px solid black collapse;
+		    text-align:center;
+		 }
+		 input[type='button']
+		 {
+		    width:100%;
+			height:100%;
+			border-radius:8px;
+			font-size:25px;
+			background-color:white;
+			color:black;
+		 }
+		 input[type='text']
+		 {
+		    width:95%;
+			height:95%;
+			color:black;
+			font-size:25px;
+			border: 1px solid collapse;
+			border-radius:8px;
+		 }
+		</style>
+	</head>
+	<body>
+	    <center>
+		    <h1>SIMPLE CALULATOR<h1>
+			<br \>
+		    <table width=50%>
+			    <tr>
+				    <td colspan='3'><input type='text' value='' id='v1' readonly></td>
+					<td><input type='button' value='CLR' onclick='clr()'></td>
+				</tr>
+				<tr>
+				    <td><input type='button' value='7' onclick="test('7')"></td>
+					<td><input type='button' value='8' onclick="test('8')"></td>
+					<td><input type='button' value='9' onclick="test('9')"></td>
+					<td><input type='button' value='/' onclick="test('/')"></td>
+				</tr>
+				<tr>
+				    <td><input type='button' value='4' onclick="test('4')"></td>
+					<td><input type='button' value='5' onclick="test('5')"></td>
+					<td><input type='button' value='6' onclick="test('6')"></td>
+					<td><input type='button' value='*' onclick="test('*')"></td>
+				</tr>
+				<tr>
+				    <td><input type='button' value='1' onclick="test('1')"></td>
+					<td><input type='button' value='2' onclick="test('2')"></td>
+					<td><input type='button' value='3' onclick="test('3')"></td>
+					<td><input type='button' value='-' onclick="test('-')"></td>
+				</tr>
+				<tr>
+				    <td><input type='button' value='0' onclick="test('0')"></td>
+					<td><input type='button' value='.' onclick="test('.')"></td>
+					<td><input type='button' value='=' onclick="solve()"></td>
+					<td><input type='button' value='+' onclick="test('+')"></td>
+				</tr>
+			</table>
+		</center>
+		<script>
+		    function test(x)
+			{
+			    document.getElementById('v1').value += x;
+			}
+			function clr()
+			{
+			    document.getElementById('v1').value = "";
+			}
+			function solve()
+			{
+			    var v2=document.getElementById('v1').value;
+				var v3=eval(v2);
+				document.getElementById('v1').value= v3;
+			}
+		</script>
+	</body>
+</html>

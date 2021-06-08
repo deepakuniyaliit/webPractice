@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquerymin.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#div1").fadeTo("slow",.15);
+                    $("#div2").fadeTo("slow",.4);
+                    $("#div3").fadeTo("fast",.7);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Demonstrate fadeTo() with different parameters.</p>
+
+        <button>Click to fade in</button>
+
+        <div id="div1" style="width: 80px; height: 80px; display: none; background-color: red;"></div><br>
+        <div id="div2" style="width: 80px; height: 80px; display: none; background-color: green;"></div><br>
+        <div id="div3" style="width: 80px; height: 80px; display: none; background-color: blue;"></div>
+    </body>
+</html>

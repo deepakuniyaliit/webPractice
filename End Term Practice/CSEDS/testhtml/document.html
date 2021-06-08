@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+    first_no:<input type="text" id="f_n" value=""/>
+	second_no:<input type="text" id="s_n" value=""/>
+	result:<input type="text" id="res" value=""/>
+	<input type="button" value="add" onclick="fun()"/>
+    <script type="text/javascript">
+	    function fun()
+		{
+		   var a=parseInt(document.getElementById("f_n").value);
+		   var b=parseInt(document.getElementById("s_n").value);
+		   var c=a+b;
+		   document.getElementById("res").value=c;
+		}
+	</script>
+</body>
+</html>
