@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <script>
+            var lower = parseInt(prompt("enter the lower bound",0));
+            var higher = parseInt(prompt("enter the upper bound", 100));
+            var diff = higher-lower;
+            var random = Math.random();
+            random *= higher;
+            random = parseInt(random);
+            var value = random%diff;
+            console.log(value);
+            value += lower;
+            document.write("The random number between " + lower + "-" +higher + "is " + value);
+        </script>
+    </body>
+</html>
