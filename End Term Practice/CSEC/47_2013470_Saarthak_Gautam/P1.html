@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function fun()
+		{
+			var a= parseInt(document.getElementById("f_n").value);
+			var b=parseInt(document.getElementById("s_n").value);
+			var result;
+			result=a+b;
+			document.getElementById("result").value=result;
+
+	    }
+	
+		
+	
+	</script>
+	
+</head>
+<body>
+	first_no:<input type="text" id="f_n" value=""/>
+	second_no:<input type="text" id="s_n" value=""/>
+	Result:<input type="text" id="result" value=""/>
+
+	<input type="button" onclick="fun()" value="Click me "/>
+
+</body>
+</html>
