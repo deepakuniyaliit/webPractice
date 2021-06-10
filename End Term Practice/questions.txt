@@ -1,0 +1,7 @@
+You can attempt following questions for practice purpose - 
+
+1. Write an HTML code that prints "Hello World!".
+2. Write a Java Script that alerts "Hello World!".
+3. Write a Java Script code that prompts for 2 numbers and then returns it's sum as an alert.
+4. Write a PHP code to print "Hello World!".
+
