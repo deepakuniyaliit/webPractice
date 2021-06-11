@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+.siblings * { 
+
+  display: block;
+
+  border: 2px solid lightgrey;
+
+  color: lightgrey;
+
+  padding: 5px;
+
+  margin: 15px;
+
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+  $("span").nextUntil("p").css({"color": "red", "border": "2px solid red"});
+
+});
+
+</script>
+
+</head>
+
+<body class="siblings">
+
+ <div>div (parent)
+
+  <span>span</span>
+
+  <h2>h2</h2>
+
+  <h3>h3</h3>
+
+  <p>p</p>
+
+</div>
+
+ </body>
+
+</html>
