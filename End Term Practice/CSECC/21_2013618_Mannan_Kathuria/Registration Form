@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration Form</title>
+	</head>
+	<body>
+		<h1> Registration Form</h1>
+         <form>
+         	<label>Name</label><br>
+         	<input type="text" name="name">
+         	<br><br>
+
+         	<label>Email</label><br>
+         	<input type="email" name="email">
+         	<br><br>
+
+         	<label>Password</label><br>
+         	<input type="password" name="password">
+         	<br><br>
+
+         	<label>Location</label><br>
+         	<select name="location">
+         		<option value="NewYork"> NewYork</option>
+         		<option value="India" selected> India</option>
+         		<option value="CA"> California</option>
+         	</select>	
+         	<br><br>
+
+         	<label>Gender</label><br>
+         	<input type="radio" name="gender" value="male" checked>Male
+         	<input type="radio" name="gender" value="female">Female
+         	<input type="radio" name="gender" value="transgender">Transgender
+         	<br><br>
+         	
+
+         	<label>Interests</label><br>
+         	<input type="checkbox" name="interests" value="movie">Movies
+         	<input type="checkbox" name="interests" value="Sports">Sports
+         	<input type="checkbox" name="interests" value="art">Arts
+         	<input type="checkbox" name="interests" value="music" >Music
+         	<br><br>
+
+         	<input type="submit" value="Submit">	
+         	<br><br>
+         </form>
+	</body>
+</html>
