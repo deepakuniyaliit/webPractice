@@ -1,0 +1,16 @@
+<html>
+<head>
+<script>
+function ch1()
+{
+    var x = document.getElementById("user").value
+    var y = x.toUpperCase()
+    document.getElementById("user").value = y
+}
+</script>
+</head>
+<body>
+<input type="text" placeholder = "enter your name" id="user" onblur = "ch1()"><br>
+<input type="password" placeholder = "enter your password" >
+</body>
+</html>
