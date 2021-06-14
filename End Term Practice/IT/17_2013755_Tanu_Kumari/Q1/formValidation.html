@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Vlaidation</title>
+	<script type="text/javascript">
+		function validateForm()
+		{
+				var fn=document.forms["regform"]["firstname"].value;
+				var ln=document.forms["regform"]["lastname"].value;
+				var gn=document.forms["regform"]["gender"];
+				var nt=document.forms["regform"]["nation"];
+		if(fn==null||fn=="")
+		{
+			alert("First name cannot be blank");
+			return false;
+		}
+		else if(ln==null||ln=="")
+		{
+			alert("Last name cannot be blank");
+			return false;
+		}
+		else if((gn[0].checked==false)&&(gn[1].checked==false))
+		{
+			alert("Please enter your gender");
+			return false;
+		}
+		else if(nt selectedIndex==0)
+		{
+			alert("Enter your nationality");
+			return false;
+		}
+		}
+	</script>
+	<style>
+		div
+		{
+				background-color:cyan;
+				margin:0px auto;
+				padding:30px;
+				width:35%;
+				font-size:20px;
+		}
+		input[type="text"],select
+		{
+				border:1px solid #ccc;
+				display: inline block;
+				margin:8px 0;
+				box-sizing:border-box;
+				padding:12px 20px;
+				width:100%;
+				font-size:14px;
+		}
+		input[type="submit"]
+		{
+				background-color:black;
+				margin:8px 0;
+				color:white;
+				padding:14px 20px;
+				width:100%;
+				border:none;
+				border-radius:4px;
+				cursor:pointer;
+				font-size:16px;
+		}
+		input[type="submit"]:hover
+		{
+				background-color:red;
+		}
+		h1
+		{
+				color:blue;
+				text-align:center;
+		}
+		div label
+		{
+				color:blue;
+		}
+		
+	</style>
+</head>
+<body>
+<h1>Registration Form</h1>
+<div bgcolor="cyan">
+   <form name ="regform" onsubmit="return validateForm()" method="post" > 
+	<label for="fname">First Name</label>
+	<input type="text" name="firstname" id="fname" value=""  placeholder="Enter First Name"/><br> 
+	
+	<label for="lname">Last Name</label>
+	<input type="text" name="lastname" id="lname" value=""  placeholder="Enter Last Name"/><br> 
+	
+	<label>Gender</label>
+	<input type="radio" name="rdbGender" id="rdbGender" value="M"/>
+	<label for="rdbGender">Male</label>
+    <input type="radio" name="rdbGender" id="rdbGender" value="F" />
+	<label for="rdbGender">Female</label><br><br>
+	
+	<label for="nation">Nationality </label>
+	<select id="nation"name="nation">
+      <option value="I">Indian</option>
+	  <option value="Amrc">American</option>
+	  <option value="K">Korean</option>
+	  <option value="Arm">Armenian</option>
+	  <option value="Aus">Austrian</option>
+	  <option value="Can">Canadian</option>
+	  <option value="O">Other</option>     
+	</select><br>
+    
+	<input type="submit" value="Submit"/>
+</div>
+</form>
+</body>
+</html>
+
