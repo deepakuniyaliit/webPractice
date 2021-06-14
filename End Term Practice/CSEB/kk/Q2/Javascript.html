@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+</head>
+<body>
+	<input id="fname" type="text" name="fname" placeholder="FirstName" >
+	<input id="lname" type="text" name="lname" placeholder="LastName" >
+	<button onclick="show()">Show</button>
+	<h3 id="message"></h3>
+	<script type="text/javascript">
+		function show(){
+			var fname=document.getElementById("fname").value;
+			var lname=document.getElementById("lname").value;
+			var message="welcome "+fname+" "+lname+" to the world of web development";
+			console.log("welcome "+fname+" "+lname+" to the world of web development");
+			var mess=document.getElementById("message");
+			mess.textContent=message;
+		}
+	</script>
+</body>
+</html>
