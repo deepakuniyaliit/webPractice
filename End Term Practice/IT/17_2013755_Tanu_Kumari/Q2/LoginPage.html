@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login Page</title>
+		<style>
+		div
+		{
+				background-color:cyan;
+				margin:0 auto;
+				padding:50px;
+				width:500px;
+				height:500px;
+				border:1px solid red;
+				box-sizing:border-box;
+		}
+		div label
+		{
+				color:blue;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<center><h1>Welcome to Login Page</h1></center><br>
+		<div>
+				Username:<br>
+				<input type="text" name="Text" id="username"><br><br>
+				
+				Password:<br>
+				<input type="password" name="Text" id="password"><br><br>
+				
+				<button onclick="login()">Submit</button>
+		</div>
+		<script type="text/javascript">
+		
+		function login()
+		{
+			var uname=document.getElementById('username').value;
+			var pass=document.getElementById('password').value;
+			
+			if(uname=="apple"&&pass=="1234")
+			{
+				location.assign("file:///F:/Desktop/page.html");
+			}
+			else
+			{
+				window.alert("Login failed");
+			}
+		}
+		</script>
+	</body>
+</html>
