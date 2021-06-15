@@ -1,0 +1,21 @@
+<html>
+<head>
+     <title>CSS example</title>
+	 <link rel="stylesheet" type="text/css" href="linkstyle.css">
+	 <!--
+	 <style type="text/css">
+	 p {
+	 color:red;
+	 font-size:100px;
+	 } 
+	 h1 {
+	 color:green;
+	 }
+	 </style>
+	 -->
+</head>
+<body>
+ <p>this is first paragraph without CSS</p>
+ <h1>this is i think green</h1 >
+</body>
+</html>
